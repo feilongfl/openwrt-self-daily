@@ -1,0 +1,8 @@
+src/.local/share/fish/fish_history
+src/.config
+src/.npm
+src/.cache
+src/.viminfo
+src/.yarnrc
+src/.bash_history
+src/.wget-hsts

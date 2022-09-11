@@ -13,9 +13,12 @@ cat feeds.conf.backup ../configs/feeds/feeds.conf.append > feeds.conf.default
 # set compile config
 cp ../configs/target/nanopi_r1.config .config
 
+# apply patches
+cp -rv ../configs/patches/platform/*.patch target/linux/sunxi/patches-5.10/
+
 # download
-make download -j(nproc) V=s
-make -j(nproc) V=s
+make download -j(nproc)
+# make -j(nproc)
 
 # exit workspace
 popd

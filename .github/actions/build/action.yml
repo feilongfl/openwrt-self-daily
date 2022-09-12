@@ -11,7 +11,7 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  entrypoint: 'compile.sh'
+  entrypoint: '/compile.sh'
   args:
     - ${{ inputs.version }}
     - ${{ inputs.target }}

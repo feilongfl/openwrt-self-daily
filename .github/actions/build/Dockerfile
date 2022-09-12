@@ -15,3 +15,5 @@ RUN useradd -ms /bin/bash feilong \
     && chmod 0440 /etc/sudoers.d/feilong
 USER feilong:feilong
 WORKDIR /home/feilong
+
+COPY ./compile.sh /compile.sh

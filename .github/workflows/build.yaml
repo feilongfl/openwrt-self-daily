@@ -13,12 +13,12 @@ jobs:
         uses: ./.github/actions/build
         with:
           version: '0.${{ github.run_number }}.${{ github.run_attempt }}'
-      # - uses: "marvinpinto/action-automatic-releases@latest"
-      #   with:
-      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
-      #     automatic_release_tag: "v0.${{ github.run_number }}.${{ github.run_attempt }}"
-      #     prerelease: true
-      #     title: "v0.${{ github.run_number }}.${{ github.run_attempt }}"
-      #     files: |
-      #       src/openwrt/bin/targets/sunxi/cortexa7/feilongwrt-22.03-snapshot-unknown-sunxi-cortexa7-friendlyarm_nanopi-r1-squashfs-sdcard.img.gz
-      #       src/openwrt/bin/targets/sunxi/cortexa7/feilongwrt-22.03-snapshot-unknown-sunxi-cortexa7-friendlyarm_nanopi-r1-ext4-sdcard.img.gz
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "v0.${{ github.run_number }}.${{ github.run_attempt }}"
+          prerelease: true
+          title: "v0.${{ github.run_number }}.${{ github.run_attempt }}"
+          files: |
+            src/openwrt/bin/targets/sunxi/cortexa7/feilongwrt-22.03-snapshot-unknown-sunxi-cortexa7-friendlyarm_nanopi-r1-squashfs-sdcard.img.gz
+            src/openwrt/bin/targets/sunxi/cortexa7/feilongwrt-22.03-snapshot-unknown-sunxi-cortexa7-friendlyarm_nanopi-r1-ext4-sdcard.img.gz

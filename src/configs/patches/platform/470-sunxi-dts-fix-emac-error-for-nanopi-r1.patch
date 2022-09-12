@@ -1,0 +1,11 @@
+--- a/arch/arm/boot/dts/sun8i-h3-nanopi-r1.dts
++++ b/arch/arm/boot/dts/sun8i-h3-nanopi-r1.dts
+@@ -94,6 +94,8 @@
+ 	phy-handle = <&ext_rgmii_phy>;
+ 	phy-mode = "rgmii";
+ 	status = "okay";
++	allwinner,tx-delay-ps = <500>;
++	allwinner,rx-delay-ps = <500>;
+ };
+ 
+ &external_mdio {

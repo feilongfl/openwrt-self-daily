@@ -1,0 +1,17 @@
+# action.yml
+name: 'ns-atom-build'
+description: 'build ns-atom'
+inputs:
+  version:
+    description: 'output version'
+    required: true
+  target:
+    description: 'output version'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: 'compile.sh'
+  args:
+    - ${{ inputs.version }}
+    - ${{ inputs.target }}

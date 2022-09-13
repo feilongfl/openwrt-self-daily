@@ -25,6 +25,5 @@ jobs:
             src/openwrt/bin/targets/sunxi/cortexa7/feeds.buildinfo
             src/openwrt/bin/targets/sunxi/cortexa7/config.buildinfo
             src/openwrt/bin/targets/sunxi/cortexa7/version.buildinfo
-            src/openwrt/bin/targets/sunxi/cortexa7/feilongwrt-22.03-snapshot-unknown-sunxi-cortexa7-friendlyarm_nanopi-r1.manifest
-            src/openwrt/bin/targets/sunxi/cortexa7/feilongwrt-22.03-snapshot-unknown-sunxi-cortexa7-friendlyarm_nanopi-r1-squashfs-sdcard.img.gz
-            src/openwrt/bin/targets/sunxi/cortexa7/feilongwrt-22.03-snapshot-unknown-sunxi-cortexa7-friendlyarm_nanopi-r1-ext4-sdcard.img.gz
+            src/openwrt/bin/targets/sunxi/cortexa7/feilongwrt-22.03-*.manifest
+            src/openwrt/bin/targets/sunxi/cortexa7/feilongwrt-22.03-*.img.gz

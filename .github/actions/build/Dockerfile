@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 # config system
 # COPY ./sources.list /etc/apt/
 RUN apt update -y && apt upgrade -y
-RUN apt install -y build-essential wget \
+RUN apt install -y build-essential wget tree \
     build-essential gawk gcc-multilib flex git gettext \
     libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev
 RUN apt install -y fish sudo vim

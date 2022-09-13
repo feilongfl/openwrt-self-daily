@@ -31,5 +31,8 @@ touch feilongwrt-22.03-snapshot-unknown-sunxi-cortexa7-friendlyarm_nanopi-r1-squ
 touch feilongwrt-22.03-snapshot-unknown-sunxi-cortexa7-friendlyarm_nanopi-r1-ext4-sdcard.img.gz
 popd
 
+# display compile result
+tree bin
+
 # exit workspace
 popd

@@ -18,7 +18,10 @@ cp -rv ../configs/patches/platform/*.patch target/linux/sunxi/patches-5.10/
 
 # download
 make download -j(nproc)
-# make -j(nproc)
+make -j(nproc)
+
+# display compile result
+tree bin
 
 # exit workspace
 popd
